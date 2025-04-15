@@ -1,47 +1,10 @@
-Last login: Tue Apr 15 16:28:35 on ttys001
 ivandrozd@Dr0ozdik ~ % multipass shell Ubuntu-GUI 
-shell failed: Cannot retrieve credentials in unknown state
-ivandrozd@Dr0ozdik ~ % multipass shell Ubuntu-GUI 
-Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-55-generic aarch64)
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-55-generic aarch64
 
- * Documentation:  https://help.ubuntu.com
- * Management:     https://landscape.canonical.com
- * Support:        https://ubuntu.com/pro
-
- System information as of Tue Apr 15 16:30:41 MSK 2025
-
-  System load:  0.24              Processes:               154
-  Usage of /:   84.3% of 8.65GB   Users logged in:         0
-  Memory usage: 9%                IPv4 address for enp0s1: 192.168.64.14
-  Swap usage:   0%
-
-
-Expanded Security Maintenance for Applications is not enabled.
-
-0 updates can be applied immediately.
-
-Enable ESM Apps to receive additional future security updates.
-See https://ubuntu.com/esm or run: sudo pro status
-
-
-The list of available updates is more than a week old.
-To check for new updates run: sudo apt update
-
-Last login: Tue Mar 11 23:22:22 2025 from 192.168.64.1
 ubuntu@Ubuntu-GUI:~$ export GITHUB_USERNAME=Dr0-ozdik777
-ubuntu@Ubuntu-GUI:~$ export GIST_TOKEN=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
-ubuntu@Ubuntu-GUI:~$ alias edit=<nano|vi|vim|subl>
--bash: syntax error near unexpected token `newline'
-ubuntu@Ubuntu-GUI:~$ export GITHUB_USERNAME=Dr0-ozdik777
-ubuntu@Ubuntu-GUI:~$ export GIST_TOKEN=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
-ubuntu@Ubuntu-GUI:~$ alias edit=<nano|vi|vim|subl>
--bash: syntax error near unexpected token `newline'
-ubuntu@Ubuntu-GUI:~$ export GITHUB_USERNAME=Dr0-ozdik777
-ubuntu@Ubuntu-GUI:~$ export GIST_TOKEN=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
+ubuntu@Ubuntu-GUI:~$ export GIST_TOKEN=*****
 ubuntu@Ubuntu-GUI:~$ alias edit=nano
-ubuntu@Ubuntu-GUI:~$ mkdir -p $Dr0-ozdik777/workspace
-mkdir: invalid option -- 'o'
-Try 'mkdir --help' for more information.
+
 ubuntu@Ubuntu-GUI:~$ mkdir -p Dr0-ozdik777/workspace
 ubuntu@Ubuntu-GUI:~$ cd Dr0-ozdik777/workspace
 ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ pwd
@@ -49,10 +12,12 @@ ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ pwd
 ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ cd ..
 ubuntu@Ubuntu-GUI:~/Dr0-ozdik777$ pwd
 /home/ubuntu/Dr0-ozdik777
+
 ubuntu@Ubuntu-GUI:~/Dr0-ozdik777$ mkdir -p workspace/tasks/
 ubuntu@Ubuntu-GUI:~/Dr0-ozdik777$ mkdir -p workspace/projects/
 ubuntu@Ubuntu-GUI:~/Dr0-ozdik777$ mkdir -p workspace/reports/
 ubuntu@Ubuntu-GUI:~/Dr0-ozdik777$ cd workspace
+
 ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ wget https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz
 --2025-04-15 17:11:42--  https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz
 Resolving nodejs.org (nodejs.org)... 172.66.128.116, 104.20.3.6
@@ -69,6 +34,7 @@ node-v6.11.5-linux-x64.ta 100%[===================================>]   8.92M  27
 ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$  tar -xf node-v6.11.5-linux-x64.tar.xz
 ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ rm -rf node-v6.11.5-linux-x64.tar.xz
 ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ mv node-v6.11.5-linux-x64 node
+
 ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ ls node/bin
 node  npm
 ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ echo ${PATH}
@@ -81,369 +47,7 @@ ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ cat > scripts/activate<<EOF
 > export PATH=\${PATH}:`pwd`/node/bin
 > EOF
 ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ source scripts/activate
-ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ gem install gist
-Command 'gem' not found, but can be installed with:
-sudo snap install ruby           # version 3.4.2, or
-sudo apt  install ruby-rubygems  # version 3.4.20-1
-See 'snap info ruby' for additional versions.
-ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ sudo apt  install ruby-rubygems  # version 3.4.20-1
-Reading package lists... Done
-Building dependency tree... Done
-Reading state information... Done
-The following additional packages will be installed:
-  fonts-lato libruby libruby3.2 rake ruby ruby-net-telnet ruby-sdbm ruby-webrick ruby-xmlrpc ruby3.2
-  rubygems-integration
-Suggested packages:
-  ri ruby-dev bundler
-The following NEW packages will be installed:
-  fonts-lato libruby libruby3.2 rake ruby ruby-net-telnet ruby-rubygems ruby-sdbm ruby-webrick
-  ruby-xmlrpc ruby3.2 rubygems-integration
-0 upgraded, 12 newly installed, 0 to remove and 1 not upgraded.
-Need to get 8599 kB of archives.
-After this operation, 44.7 MB of additional disk space will be used.
-Do you want to continue? [Y/n] y
-Get:1 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 fonts-lato all 2.015-1 [2781 kB]
-Get:2 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 rubygems-integration all 1.18 [5336 B]
-Ign:3 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 ruby3.2 arm64 3.2.3-1ubuntu0.24.04.3
-Get:4 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 ruby-rubygems all 3.4.20-1 [238 kB]
-Get:5 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 ruby arm64 1:3.2~ubuntu1 [3466 B]
-Get:6 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 rake all 13.0.6-3 [61.6 kB]
-Get:7 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 ruby-net-telnet all 0.2.0-1 [13.3 kB]
-Get:8 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 ruby-webrick all 1.8.1-1ubuntu0.1 [52.6 kB]
-Get:9 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 ruby-xmlrpc all 0.3.2-2 [24.8 kB]
-Get:10 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 ruby-sdbm arm64 1.0.0-5build4 [15.7 kB]
-Ign:11 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libruby3.2 arm64 3.2.3-1ubuntu0.24.04.3
-Get:12 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libruby arm64 1:3.2~ubuntu1 [4694 B]
-Err:3 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 ruby3.2 arm64 3.2.3-1ubuntu0.24.04.3
-  404  Not Found [IP: 185.125.190.39 80]
-Err:11 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libruby3.2 arm64 3.2.3-1ubuntu0.24.04.3
-  404  Not Found [IP: 185.125.190.39 80]
-Fetched 3200 kB in 1s (3378 kB/s)
-E: Failed to fetch http://ports.ubuntu.com/ubuntu-ports/pool/main/r/ruby3.2/ruby3.2_3.2.3-1ubuntu0.24.04.3_arm64.deb  404  Not Found [IP: 185.125.190.39 80]
-E: Failed to fetch http://ports.ubuntu.com/ubuntu-ports/pool/main/r/ruby3.2/libruby3.2_3.2.3-1ubuntu0.24.04.3_arm64.deb  404  Not Found [IP: 185.125.190.39 80]
-E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
-ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ gem install gist
-Command 'gem' not found, but can be installed with:
-sudo snap install ruby           # version 3.4.2, or
-sudo apt  install ruby-rubygems  # version 3.4.20-1
-See 'snap info ruby' for additional versions.
-ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ snap info ruby
-name:      ruby
-summary:   Interpreter for the Ruby programming language
-publisher: Ruby core team (rubylang✓)
-store-url: https://snapcraft.io/ruby
-contact:   info@ruby-lang.org
-license:   BSD-2-Clause OR Ruby
-description: |
-  Ruby is an interpreted object-oriented programming language often used for web development. It
-  also offers many scripting features to process plain text and serialized files, or manage system
-  tasks. It is simple, straightforward, and extensible.
-snap-id: RjAgguCDAawLSJ3IByPe0R92xlNtrfGt
-channels:
-  latest/stable:    3.4.3  2025-04-15 (416) 36MB classic
-  latest/candidate: ↑                            
-  latest/beta:      ↑                            
-  latest/edge:      3.3.4  2024-11-26 (378) 34MB classic
-  3.4/stable:       3.4.3  2025-04-15 (416) 36MB classic
-  3.4/candidate:    ↑                            
-  3.4/beta:         ↑                            
-  3.4/edge:         3.4.3  2025-04-14 (416) 36MB classic
-  3.3/stable:       3.3.8  2025-04-10 (413) 34MB classic
-  3.3/candidate:    ↑                            
-  3.3/beta:         ↑                            
-  3.3/edge:         3.3.8  2025-04-09 (413) 34MB classic
-  3.2/stable:       3.2.8  2025-03-26 (409) 31MB classic
-  3.2/candidate:    ↑                            
-  3.2/beta:         ↑                            
-  3.2/edge:         3.2.8  2025-03-26 (409) 31MB classic
-  3.1/stable:       3.1.7  2025-03-26 (406) 30MB classic
-  3.1/candidate:    ↑                            
-  3.1/beta:         ↑                            
-  3.1/edge:         3.1.7  2025-03-26 (406) 30MB classic
-  3.0/stable:       3.0.7  2024-04-24 (336) 27MB classic
-  3.0/candidate:    ↑                            
-  3.0/beta:         ↑                            
-  3.0/edge:         ↑                            
-  2.7/stable:       2.7.8  2023-03-31 (309) 13MB classic
-  2.7/candidate:    ↑                            
-  2.7/beta:         ↑                            
-  2.7/edge:         ↑                            
-  2.6/stable:       2.6.10 2022-04-15 (270) 27MB classic
-  2.6/candidate:    ↑                            
-  2.6/beta:         ↑                            
-  2.6/edge:         ↑                            
-ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ sudo snap install ruby           # version 3.4.2
-error: This revision of snap "ruby" was published using classic confinement and thus may perform
-       arbitrary system changes outside of the security sandbox that snaps are usually confined to,
-       which may put your system at risk.
 
-       If you understand and want to proceed repeat the command including --classic.
-ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ --classic
---classic: command not found
-ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ sudo apt  install ruby-rubygems  # version 3.4.20-1
-Reading package lists... Done
-Building dependency tree... Done
-Reading state information... Done
-The following additional packages will be installed:
-  fonts-lato libruby libruby3.2 rake ruby ruby-net-telnet ruby-sdbm ruby-webrick ruby-xmlrpc ruby3.2
-  rubygems-integration
-Suggested packages:
-  ri ruby-dev bundler
-The following NEW packages will be installed:
-  fonts-lato libruby libruby3.2 rake ruby ruby-net-telnet ruby-rubygems ruby-sdbm ruby-webrick
-  ruby-xmlrpc ruby3.2 rubygems-integration
-0 upgraded, 12 newly installed, 0 to remove and 1 not upgraded.
-Need to get 5399 kB/8599 kB of archives.
-After this operation, 44.7 MB of additional disk space will be used.
-Do you want to continue? [Y/n] y
-Ign:1 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 ruby3.2 arm64 3.2.3-1ubuntu0.24.04.3
-Ign:2 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libruby3.2 arm64 3.2.3-1ubuntu0.24.04.3
-Err:1 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 ruby3.2 arm64 3.2.3-1ubuntu0.24.04.3
-  404  Not Found [IP: 185.125.190.36 80]
-Err:2 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libruby3.2 arm64 3.2.3-1ubuntu0.24.04.3
-  404  Not Found [IP: 185.125.190.36 80]
-E: Failed to fetch http://ports.ubuntu.com/ubuntu-ports/pool/main/r/ruby3.2/ruby3.2_3.2.3-1ubuntu0.24.04.3_arm64.deb  404  Not Found [IP: 185.125.190.36 80]
-E: Failed to fetch http://ports.ubuntu.com/ubuntu-ports/pool/main/r/ruby3.2/libruby3.2_3.2.3-1ubuntu0.24.04.3_arm64.deb  404  Not Found [IP: 185.125.190.36 80]
-E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
-ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ --fix-missing
---fix-missing: command not found
-ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ apt-get update
-Reading package lists... Done
-E: Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)
-E: Unable to lock directory /var/lib/apt/lists/
-W: Problem unlinking the file /var/cache/apt/pkgcache.bin - RemoveCaches (13: Permission denied)
-W: Problem unlinking the file /var/cache/apt/srcpkgcache.bin - RemoveCaches (13: Permission denied)
-ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ sudo snap install ruby           # version 3.4.2
-error: This revision of snap "ruby" was published using classic confinement and thus may perform
-       arbitrary system changes outside of the security sandbox that snaps are usually confined to,
-       which may put your system at risk.
-
-       If you understand and want to proceed repeat the command including --classic.
-ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ sudo apt  install ruby-rubygems  # version 3.4.20-1
-Reading package lists... Done
-Building dependency tree... Done
-Reading state information... Done
-The following additional packages will be installed:
-  fonts-lato libruby libruby3.2 rake ruby ruby-net-telnet ruby-sdbm ruby-webrick ruby-xmlrpc ruby3.2
-  rubygems-integration
-Suggested packages:
-  ri ruby-dev bundler
-The following NEW packages will be installed:
-  fonts-lato libruby libruby3.2 rake ruby ruby-net-telnet ruby-rubygems ruby-sdbm ruby-webrick
-  ruby-xmlrpc ruby3.2 rubygems-integration
-0 upgraded, 12 newly installed, 0 to remove and 1 not upgraded.
-Need to get 5399 kB/8599 kB of archives.
-After this operation, 44.7 MB of additional disk space will be used.
-Do you want to continue? [Y/n] н
-Abort.
-ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ sudo apt  install ruby-rubygems  # version 3.4.20-1
-Reading package lists... Done
-Building dependency tree... Done
-Reading state information... Done
-The following additional packages will be installed:
-  fonts-lato libruby libruby3.2 rake ruby ruby-net-telnet ruby-sdbm ruby-webrick ruby-xmlrpc ruby3.2
-  rubygems-integration
-Suggested packages:
-  ri ruby-dev bundler
-The following NEW packages will be installed:
-  fonts-lato libruby libruby3.2 rake ruby ruby-net-telnet ruby-rubygems ruby-sdbm ruby-webrick
-  ruby-xmlrpc ruby3.2 rubygems-integration
-0 upgraded, 12 newly installed, 0 to remove and 1 not upgraded.
-Need to get 5399 kB/8599 kB of archives.
-After this operation, 44.7 MB of additional disk space will be used.
-Do you want to continue? [Y/n] y
-Ign:1 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 ruby3.2 arm64 3.2.3-1ubuntu0.24.04.3
-Ign:2 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libruby3.2 arm64 3.2.3-1ubuntu0.24.04.3
-Err:1 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 ruby3.2 arm64 3.2.3-1ubuntu0.24.04.3
-  404  Not Found [IP: 185.125.190.39 80]
-Err:2 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libruby3.2 arm64 3.2.3-1ubuntu0.24.04.3
-  404  Not Found [IP: 185.125.190.39 80]
-E: Failed to fetch http://ports.ubuntu.com/ubuntu-ports/pool/main/r/ruby3.2/ruby3.2_3.2.3-1ubuntu0.24.04.3_arm64.deb  404  Not Found [IP: 185.125.190.39 80]
-E: Failed to fetch http://ports.ubuntu.com/ubuntu-ports/pool/main/r/ruby3.2/libruby3.2_3.2.3-1ubuntu0.24.04.3_arm64.deb  404  Not Found [IP: 185.125.190.39 80]
-E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
-ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ sudo apt-get update
-Hit:1 http://ports.ubuntu.com/ubuntu-ports noble InRelease
-Get:2 http://ports.ubuntu.com/ubuntu-ports noble-updates InRelease [126 kB]
-Get:3 http://ports.ubuntu.com/ubuntu-ports noble-backports InRelease [126 kB]
-Get:4 http://ports.ubuntu.com/ubuntu-ports noble-security InRelease [126 kB]
-Get:5 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 Packages [1000 kB]
-Get:6 http://ports.ubuntu.com/ubuntu-ports noble-updates/main Translation-en [219 kB]
-Get:7 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 Components [148 kB]
-Get:8 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 c-n-f Metadata [13.2 kB]
-Get:9 http://ports.ubuntu.com/ubuntu-ports noble-updates/universe arm64 Packages [1025 kB]
-Get:10 http://ports.ubuntu.com/ubuntu-ports noble-updates/universe Translation-en [266 kB]
-Get:11 http://ports.ubuntu.com/ubuntu-ports noble-updates/universe arm64 Components [367 kB]
-Get:12 http://ports.ubuntu.com/ubuntu-ports noble-updates/universe Icons (48x48) [225 kB]
-Get:13 http://ports.ubuntu.com/ubuntu-ports noble-updates/universe Icons (64x64) [347 kB]
-Get:14 http://ports.ubuntu.com/ubuntu-ports noble-updates/universe arm64 c-n-f Metadata [25.4 kB]
-Get:15 http://ports.ubuntu.com/ubuntu-ports noble-updates/restricted arm64 Packages [1062 kB]
-Get:16 http://ports.ubuntu.com/ubuntu-ports noble-updates/restricted Translation-en [182 kB]
-Get:17 http://ports.ubuntu.com/ubuntu-ports noble-updates/restricted arm64 Components [212 B]
-Get:18 http://ports.ubuntu.com/ubuntu-ports noble-updates/restricted arm64 c-n-f Metadata [440 B]
-Get:19 http://ports.ubuntu.com/ubuntu-ports noble-updates/multiverse arm64 Packages [16.9 kB]
-Get:20 http://ports.ubuntu.com/ubuntu-ports noble-updates/multiverse Translation-en [4788 B]
-Get:21 http://ports.ubuntu.com/ubuntu-ports noble-updates/multiverse arm64 Components [212 B]
-Get:22 http://ports.ubuntu.com/ubuntu-ports noble-updates/multiverse arm64 c-n-f Metadata [408 B]
-Get:23 http://ports.ubuntu.com/ubuntu-ports noble-backports/main arm64 Packages [39.1 kB]
-Get:24 http://ports.ubuntu.com/ubuntu-ports noble-backports/main Translation-en [8676 B]
-Get:25 http://ports.ubuntu.com/ubuntu-ports noble-backports/main arm64 Components [3576 B]
-Get:26 http://ports.ubuntu.com/ubuntu-ports noble-backports/main Icons (48x48) [9518 B]
-Get:27 http://ports.ubuntu.com/ubuntu-ports noble-backports/main Icons (64x64) [11.2 kB]
-Get:28 http://ports.ubuntu.com/ubuntu-ports noble-backports/main arm64 c-n-f Metadata [272 B]
-Get:29 http://ports.ubuntu.com/ubuntu-ports noble-backports/universe arm64 Packages [26.5 kB]
-Get:30 http://ports.ubuntu.com/ubuntu-ports noble-backports/universe Translation-en [16.3 kB]
-Get:31 http://ports.ubuntu.com/ubuntu-ports noble-backports/universe arm64 Components [15.8 kB]
-Get:32 http://ports.ubuntu.com/ubuntu-ports noble-backports/universe Icons (48x48) [17.4 kB]
-Get:33 http://ports.ubuntu.com/ubuntu-ports noble-backports/universe Icons (64x64) [24.3 kB]
-Get:34 http://ports.ubuntu.com/ubuntu-ports noble-backports/universe arm64 c-n-f Metadata [1300 B]
-Get:35 http://ports.ubuntu.com/ubuntu-ports noble-backports/restricted arm64 Components [212 B]
-Get:36 http://ports.ubuntu.com/ubuntu-ports noble-backports/multiverse arm64 Components [212 B]
-Get:37 http://ports.ubuntu.com/ubuntu-ports noble-security/main arm64 Packages [758 kB]
-Get:38 http://ports.ubuntu.com/ubuntu-ports noble-security/main Translation-en [143 kB]
-Get:39 http://ports.ubuntu.com/ubuntu-ports noble-security/main arm64 Components [5692 B]
-Get:40 http://ports.ubuntu.com/ubuntu-ports noble-security/main arm64 c-n-f Metadata [6816 B]
-Get:41 http://ports.ubuntu.com/ubuntu-ports noble-security/universe arm64 Packages [805 kB]
-Get:42 http://ports.ubuntu.com/ubuntu-ports noble-security/universe Translation-en [181 kB]
-Get:43 http://ports.ubuntu.com/ubuntu-ports noble-security/universe arm64 Components [52.3 kB]
-Get:44 http://ports.ubuntu.com/ubuntu-ports noble-security/universe arm64 c-n-f Metadata [16.6 kB]
-Get:45 http://ports.ubuntu.com/ubuntu-ports noble-security/restricted arm64 Packages [1024 kB]
-Get:46 http://ports.ubuntu.com/ubuntu-ports noble-security/restricted Translation-en [175 kB]
-Get:47 http://ports.ubuntu.com/ubuntu-ports noble-security/restricted arm64 Components [212 B]
-Get:48 http://ports.ubuntu.com/ubuntu-ports noble-security/restricted arm64 c-n-f Metadata [416 B]
-Get:49 http://ports.ubuntu.com/ubuntu-ports noble-security/multiverse arm64 Packages [15.3 kB]
-Get:50 http://ports.ubuntu.com/ubuntu-ports noble-security/multiverse Translation-en [3792 B]
-Get:51 http://ports.ubuntu.com/ubuntu-ports noble-security/multiverse arm64 Components [212 B]
-Get:52 http://ports.ubuntu.com/ubuntu-ports noble-security/multiverse arm64 c-n-f Metadata [368 B]
-Fetched 8642 kB in 3s (2831 kB/s)                               
-Reading package lists... Done
-ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ sudo apt-get install ruby-rubygems --fix-missing
-Reading package lists... Done
-Building dependency tree... Done
-Reading state information... Done
-The following additional packages will be installed:
-  fonts-lato libruby libruby3.2 rake ruby ruby-net-telnet ruby-sdbm ruby-webrick ruby-xmlrpc ruby3.2
-  rubygems-integration
-Suggested packages:
-  ri ruby-dev bundler
-The following NEW packages will be installed:
-  fonts-lato libruby libruby3.2 rake ruby ruby-net-telnet ruby-rubygems ruby-sdbm ruby-webrick
-  ruby-xmlrpc ruby3.2 rubygems-integration
-0 upgraded, 12 newly installed, 0 to remove and 131 not upgraded.
-Need to get 5381 kB/8581 kB of archives.
-After this operation, 44.7 MB of additional disk space will be used.
-Do you want to continue? [Y/n] н
-Abort.
-ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ sudo apt-get install ruby-rubygems --fix-missing
-Reading package lists... Done
-Building dependency tree... Done
-Reading state information... Done
-The following additional packages will be installed:
-  fonts-lato libruby libruby3.2 rake ruby ruby-net-telnet ruby-sdbm ruby-webrick ruby-xmlrpc ruby3.2
-  rubygems-integration
-Suggested packages:
-  ri ruby-dev bundler
-The following NEW packages will be installed:
-  fonts-lato libruby libruby3.2 rake ruby ruby-net-telnet ruby-rubygems ruby-sdbm ruby-webrick
-  ruby-xmlrpc ruby3.2 rubygems-integration
-0 upgraded, 12 newly installed, 0 to remove and 131 not upgraded.
-Need to get 5381 kB/8581 kB of archives.
-After this operation, 44.7 MB of additional disk space will be used.
-Do you want to continue? [Y/n] y
-Get:1 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 ruby3.2 arm64 3.2.3-1ubuntu0.24.04.5 [50.8 kB]
-Get:2 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libruby3.2 arm64 3.2.3-1ubuntu0.24.04.5 [5330 kB]
-Fetched 5381 kB in 1s (5258 kB/s)     
-Selecting previously unselected package fonts-lato.
-(Reading database ... 196662 files and directories currently installed.)
-Preparing to unpack .../00-fonts-lato_2.015-1_all.deb ...
-Unpacking fonts-lato (2.015-1) ...
-Selecting previously unselected package rubygems-integration.
-Preparing to unpack .../01-rubygems-integration_1.18_all.deb ...
-Unpacking rubygems-integration (1.18) ...
-Selecting previously unselected package ruby3.2.
-Preparing to unpack .../02-ruby3.2_3.2.3-1ubuntu0.24.04.5_arm64.deb ...
-Unpacking ruby3.2 (3.2.3-1ubuntu0.24.04.5) ...
-Selecting previously unselected package ruby-rubygems.
-Preparing to unpack .../03-ruby-rubygems_3.4.20-1_all.deb ...
-Unpacking ruby-rubygems (3.4.20-1) ...
-Selecting previously unselected package ruby.
-Preparing to unpack .../04-ruby_1%3a3.2~ubuntu1_arm64.deb ...
-Unpacking ruby (1:3.2~ubuntu1) ...
-Selecting previously unselected package rake.
-Preparing to unpack .../05-rake_13.0.6-3_all.deb ...
-Unpacking rake (13.0.6-3) ...
-Selecting previously unselected package ruby-net-telnet.
-Preparing to unpack .../06-ruby-net-telnet_0.2.0-1_all.deb ...
-Unpacking ruby-net-telnet (0.2.0-1) ...
-Selecting previously unselected package ruby-webrick.
-Preparing to unpack .../07-ruby-webrick_1.8.1-1ubuntu0.1_all.deb ...
-Unpacking ruby-webrick (1.8.1-1ubuntu0.1) ...
-Selecting previously unselected package ruby-xmlrpc.
-Preparing to unpack .../08-ruby-xmlrpc_0.3.2-2_all.deb ...
-Unpacking ruby-xmlrpc (0.3.2-2) ...
-Selecting previously unselected package ruby-sdbm:arm64.
-Preparing to unpack .../09-ruby-sdbm_1.0.0-5build4_arm64.deb ...
-Unpacking ruby-sdbm:arm64 (1.0.0-5build4) ...
-Selecting previously unselected package libruby3.2:arm64.
-Preparing to unpack .../10-libruby3.2_3.2.3-1ubuntu0.24.04.5_arm64.deb ...
-Unpacking libruby3.2:arm64 (3.2.3-1ubuntu0.24.04.5) ...
-Selecting previously unselected package libruby:arm64.
-Preparing to unpack .../11-libruby_1%3a3.2~ubuntu1_arm64.deb ...
-Unpacking libruby:arm64 (1:3.2~ubuntu1) ...
-Setting up fonts-lato (2.015-1) ...
-Setting up rubygems-integration (1.18) ...
-Setting up ruby-net-telnet (0.2.0-1) ...
-Setting up ruby-webrick (1.8.1-1ubuntu0.1) ...
-Setting up ruby-xmlrpc (0.3.2-2) ...
-Setting up ruby3.2 (3.2.3-1ubuntu0.24.04.5) ...
-Setting up libruby:arm64 (1:3.2~ubuntu1) ...
-Setting up ruby (1:3.2~ubuntu1) ...
-Setting up rake (13.0.6-3) ...
-Setting up libruby3.2:arm64 (3.2.3-1ubuntu0.24.04.5) ...
-Setting up ruby-rubygems (3.4.20-1) ...
-Setting up ruby-sdbm:arm64 (1.0.0-5build4) ...
-Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
-Processing triggers for libc-bin (2.39-0ubuntu8.4) ...
-Processing triggers for man-db (2.12.0-4build2) ...
-Scanning processes...                                                                                 
-Scanning linux images...                                                                              
-
-Running kernel seems to be up-to-date.
-
-No services need to be restarted.
-
-No containers need to be restarted.
-
-No user sessions are running outdated binaries.
-
-No VM guests are running outdated hypervisor (qemu) binaries on this host.
-ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ sudo apt  install ruby-rubygems  # version 3.4.20-1
-Reading package lists... Done
-Building dependency tree... Done
-Reading state information... Done
-ruby-rubygems is already the newest version (3.4.20-1).
-0 upgraded, 0 newly installed, 0 to remove and 131 not upgraded.
-ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ gem install gist
-Fetching gist-6.0.0.gem
-ERROR:  While executing gem ... (Gem::FilePermissionError)
-    You don't have write permissions for the /var/lib/gems/3.2.0 directory.
-	/usr/lib/ruby/vendor_ruby/rubygems/installer.rb:713:in `verify_gem_home'
-	/usr/lib/ruby/vendor_ruby/rubygems/installer.rb:903:in `pre_install_checks'
-	/usr/lib/ruby/vendor_ruby/rubygems/installer.rb:303:in `install'
-	/usr/lib/ruby/vendor_ruby/rubygems/resolver/specification.rb:105:in `install'
-	/usr/lib/ruby/vendor_ruby/rubygems/request_set.rb:195:in `block in install'
-	/usr/lib/ruby/vendor_ruby/rubygems/request_set.rb:183:in `each'
-	/usr/lib/ruby/vendor_ruby/rubygems/request_set.rb:183:in `install'
-	/usr/lib/ruby/vendor_ruby/rubygems/commands/install_command.rb:215:in `install_gem'
-	/usr/lib/ruby/vendor_ruby/rubygems/commands/install_command.rb:231:in `block in install_gems'
-	/usr/lib/ruby/vendor_ruby/rubygems/commands/install_command.rb:224:in `each'
-	/usr/lib/ruby/vendor_ruby/rubygems/commands/install_command.rb:224:in `install_gems'
-	/usr/lib/ruby/vendor_ruby/rubygems/commands/install_command.rb:170:in `execute'
-	/usr/lib/ruby/vendor_ruby/rubygems/command.rb:328:in `invoke_with_build_args'
-	/usr/lib/ruby/vendor_ruby/rubygems/command_manager.rb:253:in `invoke_command'
-	/usr/lib/ruby/vendor_ruby/rubygems/command_manager.rb:193:in `process_args'
-	/usr/lib/ruby/vendor_ruby/rubygems/command_manager.rb:151:in `run'
-	/usr/lib/ruby/vendor_ruby/rubygems/gem_runner.rb:52:in `run'
-	/usr/bin/gem:12:in `<main>'
 ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ sudo gem install gist
 Fetching gist-6.0.0.gem
 Successfully installed gist-6.0.0
@@ -451,7 +55,9 @@ Parsing documentation for gist-6.0.0
 Installing ri documentation for gist-6.0.0
 Done installing documentation for gist after 0 seconds
 1 gem installed
+
 ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ (umask 0077 && echo ${GIST_TOKEN} > ~/.gist)
+
 ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ export LAB_NUMBER=01
 ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ git clone https://github.com/tp-labs/lab01 tasks/lab01
 Cloning into 'tasks/lab01'...
@@ -461,10 +67,3 @@ remote: Compressing objects: 100% (3/3), done.
 remote: Total 74 (delta 0), reused 1 (delta 0), pack-reused 71 (from 1)
 Receiving objects: 100% (74/74), 945.07 KiB | 3.01 MiB/s, done.
 Resolving deltas: 100% (20/20), done.
-ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ mkdir reports/lab01
-ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ cp tasks/lab${LAB_NUMBER}/README.md reports/lab01/REPORT.md
-ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace$ cd reports/lab01
-ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace/reports/lab01$ edit REPORT.md
-ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace/reports/lab01$ gist REPORT.md
-Error: Got Net::HTTPForbidden from gist: {"message":"Resource not accessible by personal access token","documentation_url":"https://docs.github.com/rest/gists/gists#create-a-gist","status":"403"}
-ubuntu@Ubuntu-GUI:~/Dr0-ozdik777/workspace/reports/lab01$ 
